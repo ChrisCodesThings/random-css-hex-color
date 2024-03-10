@@ -1,35 +1,35 @@
-# stub-repo &middot; [![Test workflow status](https://github.com/ChrisCodesThings/stub-repo/actions/workflows/test.yml/badge.svg)](../../actions/workflows/test.yml) [![NPM Version](https://img.shields.io/npm/v/@chriscodesthings/stub-repo)](https://www.npmjs.com/package/@chriscodesthings/stub-repo) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+# random-css-hex-color &middot; [![Test workflow status](https://github.com/ChrisCodesThings/random-css-hex-color/actions/workflows/test.yml/badge.svg)](../../actions/workflows/test.yml) [![NPM Version](https://img.shields.io/npm/v/@chriscodesthings/random-css-hex-color)](https://www.npmjs.com/package/@chriscodesthings/random-css-hex-color) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-> **Function to determine if something is a string type**
+> **Generates a random color in CSS hex format**
 
 ## Install
 
 ```sh
-npm install --save @chriscodesthings/stub-repo
+npm install --save @chriscodesthings/random-css-hex-color
 ```
 
 ## Use
 
 ```js
-import stubRepo from '@chriscodesthings/stub-repo';
+import randomHexColor from '@chriscodesthings/random-css-hex-color';
 
-console.log(stubRepo("hello world!"));
-// => true
+console.log(randomHexColor());
+// => #c7a34b
 ```
 
 ## Syntax
 
 ```js
-stubRepo(var);
+randomHexColor(dark);
 ```
 
 ### Parameters
 
-- *var*: any
+- *dark*: If undefined, any color is returned. If true, color is dark based on YIQ calculation. If false, color is light based on YIQ calculation.
 
 ### Return Value
 
-Returns something probably.
+Returns a CSS hex color code string.
 
 ## Description
 
