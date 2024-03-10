@@ -30,10 +30,14 @@
     "version": "auto-changelog -p && git add CHANGELOG.md",
     "postversion": "git push && git push --tags"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@chriscodesthings/ultimate-random-number-er": "*",
+    "@chriscodesthings/rgb-color-is-dark": "*"
+  },
   "devDependencies": {
     "auto-changelog": "*",
-    "jest": "*"
+    "jest": "*",
+    "@chriscodesthings/css-hex-color-to-rgba": "*"
   },
   "publishConfig": {
     "access": "public"
