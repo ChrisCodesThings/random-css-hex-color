@@ -1,6 +1,6 @@
 {
   "name": "@chriscodesthings/random-css-hex-color",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Generates a random color in CSS hex format",
   "keywords": [
     "random",
