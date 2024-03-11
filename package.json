@@ -32,13 +32,13 @@
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
-    "@chriscodesthings/ultimate-random-number-er": "*",
-    "@chriscodesthings/rgb-color-is-dark": "*"
+    "@chriscodesthings/ultimate-random-number-er": "^0.2.1",
+    "@chriscodesthings/rgb-color-is-dark": "^1.0.0"
   },
   "devDependencies": {
-    "auto-changelog": "*",
-    "jest": "*",
-    "@chriscodesthings/css-hex-color-to-rgba": "*"
+    "@chriscodesthings/css-hex-color-to-rgba": "^1.0.0",
+    "auto-changelog": "^2.4.0",
+    "jest": "^29.7.0"
   },
   "publishConfig": {
     "access": "public"
