@@ -10,13 +10,13 @@ function decToHexPair(n) {
 }
 
 export default function (tone) {
-    let [r, g, b] = randomRGB();
+    let col = randomRGB();
 
     if (typeof tone === 'boolean') {
-        while (isDark(r, g, b) != tone) {
-            [r, g, b] = randomRGB();
+        while (isDark(col) != tone) {
+            col = randomRGB();
         }
     }
 
-    return "#" + decToHexPair(r) + decToHexPair(g) + decToHexPair(b);
+    return "#" + decToHexPair(col[0]) + decToHexPair(col[1]) + decToHexPair(col[2]);
 }

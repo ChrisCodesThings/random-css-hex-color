@@ -12,7 +12,7 @@ describe("generate a random css hex colour", () => {
         for (let i = 0; i < 50; i++) {
             const col = testFunc(true);
             const rgba = hexToRGBA(col);
-            const dark = isDark(...rgba);
+            const dark = isDark(rgba);
 
             expect(dark).toEqual(true);
         }
@@ -22,7 +22,7 @@ describe("generate a random css hex colour", () => {
         for (let i = 0; i < 50; i++) {
             const col = testFunc(false);
             const rgba = hexToRGBA(col);
-            const light = !isDark(...rgba);
+            const light = !isDark(rgba);
 
             expect(light).toEqual(true);
         }
