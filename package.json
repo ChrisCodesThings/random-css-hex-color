@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@chriscodesthings/ultimate-random-number-er": "^0.2.1",
-    "@chriscodesthings/rgb-color-is-dark": "^1.0.0"
+    "@chriscodesthings/rgb-color-is-dark": "^2.0.0"
   },
   "devDependencies": {
     "@chriscodesthings/css-hex-color-to-rgba": "^1.0.0",
