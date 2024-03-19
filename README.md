@@ -20,12 +20,12 @@ console.log(randomHexColor());
 ## Syntax
 
 ```js
-randomHexColor(dark);
+randomHexColor(tone);
 ```
 
 ### Parameters
 
-- *dark*: If undefined, any color is returned. If true, color is dark based on YIQ calculation. If false, color is light based on YIQ calculation.
+- *tone*: If undefined, any color is returned. If true, color is dark based on YIQ calculation. If false, color is light based on YIQ calculation.
 
 ### Return Value
 
