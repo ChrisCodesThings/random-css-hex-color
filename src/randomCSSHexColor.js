@@ -1,22 +1,13 @@
-import random from '@chriscodesthings/ultimate-random-number-er';
-import isDark from '@chriscodesthings/rgb-color-is-dark';
+// @ts-check
 
-function randomRGB() {
-    return [random(255), random(255), random(255)];
-}
+import randomRGBColor from "@chriscodesthings/random-rgb-color";
+import rgbaColourToCSSHex from "@chriscodesthings/rgba-color-to-css-hex";
 
-function decToHexPair(n) {
-    return Number(n).toString(16).padStart(2, "0");
-}
-
-export default function (tone) {
-    let col = randomRGB();
-
-    if (typeof tone === 'boolean') {
-        while (isDark(col) != tone) {
-            col = randomRGB();
-        }
-    }
-
-    return "#" + decToHexPair(col[0]) + decToHexPair(col[1]) + decToHexPair(col[2]);
+/**
+ * Picks a random colour in CSS hex format
+ * @param {boolean} tone (optional) if true generates a dark colour, if false generates a light colour
+ * @returns {string}
+ */
+export default function randomCSSHexColor(tone) {
+    return rgbaColourToCSSHex(randomRGBColor(tone));
 }
