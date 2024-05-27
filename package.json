@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "@chriscodesthings/random-rgb-color": "^1.0.0",
-    "@chriscodesthings/rgba-color-to-css-hex": "^1.1.0"
+    "@chriscodesthings/rgba-color-to-css-hex": "^1.1.0",
+    "@chriscodesthings/basic-color-types": "^1.0.1"
   },
   "devDependencies": {
     "auto-changelog": "^2.4.0",
